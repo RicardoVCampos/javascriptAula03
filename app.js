@@ -302,6 +302,34 @@
 // 5. Escreva	 um	 programa	 para	 ler	 3	 valores	 inteiros	 (considere	 que	 	 não	
 // serão	lidos	valores	iguais)	e	escrevê-los	em	ordem	crescente. 
 
+// // Função principal para ler, ordenar e exibir os valores
+// function ordenarValores() {
+//     // Lê os três valores inteiros
+//     let valor1 = parseInt(prompt("Digite o primeiro valor inteiro:"));
+//     let valor2 = parseInt(prompt("Digite o segundo valor inteiro:"));
+//     let valor3 = parseInt(prompt("Digite o terceiro valor inteiro:"));
+
+//     // Verifica se os valores são diferentes
+//     if (valor1 === valor2 || valor1 === valor3 || valor2 === valor3) {
+//         alert("Os valores devem ser diferentes. Recarregue a página e tente novamente.");
+//         return;
+//     }
+
+//     // Coloca os valores em um array
+//     let valores = [valor1, valor2, valor3]; 
+
+//     // Ordena os valores em ordem crescente
+//     valores.sort((a, b) => a - b);
+
+//     // Exibe os valores ordenados
+//     alert("Valores em ordem crescente: " + valores.join(", "));
+//     console.log("Valores em ordem crescente:", valores);
+// }
+
+// // Chama a função principal assim que o arquivo for carregado
+// ordenarValores();
+ 
+
 
     
 // 6. Tendo	 como	 entrada	 a	 altura	 e	 o	 sexo	 (codificado	 da	 seguinte	 forma:	
@@ -311,6 +339,37 @@
 // - para	homens:	(72.7	*	Altura)	– 58	
 // - para	mulheres:	(62.1	*	Altura)	– 44.7	- para	mulheres:	(62.1	*	Altura)	– 44.7	
     
+// // Função principal para calcular o peso ideal
+// function calcularPesoIdeal() {
+//     // Solicita a altura e converte para número decimal
+//     let altura = parseFloat(prompt("Digite a sua altura em metros (ex: 1.75):"));
+
+//     // Solicita o sexo (1 para feminino e 2 para masculino)
+//     let sexo = parseInt(prompt("Digite o sexo: 1 para Feminino, 2 para Masculino:"));
+
+//     // Validação dos valores
+//     if (isNaN(altura) || (sexo !== 1 && sexo !== 2)) {
+//         alert("Entrada inválida! Certifique-se de digitar valores corretos.");
+//         return;
+//     }
+
+//     // Calcula o peso ideal com base no sexo
+//     let pesoIdeal;
+//     if (sexo === 2) { // Masculino
+//         pesoIdeal = (72.7 * altura) - 58;
+//     } else if (sexo === 1) { // Feminino
+//         pesoIdeal = (62.1 * altura) - 44.7;
+//     }
+
+//     // Exibe o peso ideal com duas casas decimais
+//     alert(`Seu peso ideal é: ${pesoIdeal.toFixed(2)} kg`);
+//     console.log(`Altura: ${altura} m | Sexo: ${sexo === 2 ? "Masculino" : "Feminino"} | Peso Ideal: ${pesoIdeal.toFixed(2)} kg`);
+// }
+
+// // Chama a função principal
+// calcularPesoIdeal();
+
+
 // 7. Escreva	um	programa	para	ler	o	número	de	lados	de	um	polígono	regular	
 // e	a	medida	do	lado	(em	cm).	Calcular	e	imprimir	o	seguinte:	
 // − Se	o	número	de	lados	for	igual	a	3	escrever	TRIÂNGULO	e	o	valor	da	
